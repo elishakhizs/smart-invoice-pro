@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang=\"en\">
-    <head>
-        <meta charset=\"UTF-8\">
-        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <title>Smart Invoice Pro</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Invoice Pro</title>
 
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class=\"bg-gray-100\">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
 
-        <div class=\"flex min-h-screen\">
+<body class="bg-gray-100">
 
-            <!-- Sidebar -->
-            @include('components.sidebar')
+<div class="flex h-screen overflow-hidden">
 
-            <!-- Main Content -->
-            <div class=\"flex-1 flex flex-col\">
+    <!-- Sidebar -->
+    @include('components.sidebar')
 
-                <!-- Topbar -->
-                @include('components.topbar')
+    <!-- Main Area -->
+    <div class="flex-1 flex flex-col overflow-hidden">
 
-                <!-- Page Content -->
-                <main class=\"p-6\">
-                    {{ $slot ?? '' }}
+        <!-- Topbar -->
+        @include('components.topbar')
 
-                    @yield('content')
-                </main>
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto p-6">
+            @yield('content')
+        </main>
 
-            </div>
+    </div>
 
-        </div>
+</div>
 
-    </body>
+</body>
 </html>
