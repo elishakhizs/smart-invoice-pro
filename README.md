@@ -1,59 +1,222 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Smart Invoice Pro
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Smart Invoice Pro is a full-stack business management application built with Laravel. The project is designed to provide businesses with a centralised system for managing clients and invoicing workflows.
 
-## About Laravel
+The application is being developed as a production-oriented portfolio project to demonstrate practical full-stack software development, database design, authentication, business logic and responsive user interface development.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Project Status
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**In active development**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Current development includes:
 
-## Learning Laravel
+* User authentication
+* Dashboard
+* Client management
+* Company-based application structure
+* Database-driven workflows
+* Responsive user interface
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Additional invoicing functionality is being developed as part of the project roadmap.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🛠️ Technology Stack
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Backend
 
-### Premium Partners
+* PHP
+* Laravel
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Frontend
 
-## Contributing
+* Livewire
+* Tailwind CSS
+* JavaScript
+* Vite
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Database
 
-## Code of Conduct
+* SQLite
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Development Tools
 
-## Security Vulnerabilities
+* Git
+* GitHub
+* Visual Studio Code
+* Composer
+* NPM
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## ✨ Current Features
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Authentication
+
+The application includes user authentication and protected application areas.
+
+### Dashboard
+
+A responsive application dashboard provides the central interface for accessing system functionality.
+
+### Client Management
+
+Users can manage client records through the application.
+
+Current functionality includes:
+
+* Create clients
+* View clients
+* Edit clients
+* Delete clients
+* View client details
+
+### Company Structure
+
+The application is being developed with company-based data relationships to support business users and their associated records.
+
+---
+
+## 🏗️ Application Architecture
+
+The application follows Laravel's MVC architecture and uses Laravel's database and authentication functionality to manage application data and user access.
+
+The project is structured around modular business functionality so additional modules can be added as development continues.
+
+---
+
+## 🗄️ Database
+
+The current development environment uses SQLite.
+
+The database contains application entities including users, companies and clients, with additional invoice-related entities planned as development progresses.
+
+---
+
+## 💻 Local Installation
+
+### Requirements
+
+Before installing the application, ensure you have:
+
+* PHP
+* Composer
+* Node.js and NPM
+* SQLite
+* Git
+
+### Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/smart-invoice-pro.git
+```
+
+Navigate into the project:
+
+```bash
+cd smart-invoice-pro
+```
+
+Install PHP dependencies:
+
+```bash
+composer install
+```
+
+Install frontend dependencies:
+
+```bash
+npm install
+```
+
+Create the environment file:
+
+```bash
+cp .env.example .env
+```
+
+Generate the Laravel application key:
+
+```bash
+php artisan key:generate
+```
+
+Run migrations:
+
+```bash
+php artisan migrate
+```
+
+Build frontend assets:
+
+```bash
+npm run build
+```
+
+Start the Laravel development server:
+
+```bash
+php artisan serve
+```
+
+---
+
+## 🔐 Environment Configuration
+
+Sensitive environment configuration is stored in the `.env` file.
+
+The `.env` file is intentionally excluded from version control.
+
+Developers should create their own `.env` file using:
+
+```text
+.env.example
+```
+
+---
+
+## 🧪 Development Roadmap
+
+Planned functionality includes:
+
+* Invoice management
+* Invoice items
+* Invoice calculations
+* Invoice status management
+* PDF invoice generation
+* Customer invoice history
+* Dashboard statistics
+* Improved validation
+* Automated testing
+* Production deployment
+
+---
+
+## 🎯 Project Goals
+
+Smart Invoice Pro is being developed to demonstrate practical software engineering skills including:
+
+* Full-stack web development
+* Laravel application architecture
+* Database design
+* Authentication and authorization
+* CRUD development
+* Business logic
+* Responsive interface development
+* Git version control
+* Software testing
+* Production deployment
+
+---
+
+## 👨‍💻 Developer
+
+**Elisha Oluwadayomi**
+
+Full-Stack Software Developer | IT Professional
+
+Portfolio: https://elishakhizs.github.io/
+
+GitHub: https://github.com/elishkhizs
+
+LinkedIn: www.linkedin.com/in/elisha-oluwadayomi-693a23336
