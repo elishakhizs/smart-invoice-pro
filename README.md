@@ -48,6 +48,17 @@ Additional invoicing functionality is being developed as part of the project roa
 * NPM
 
 ---
+## 📸 Application Screenshots
+
+### Login
+
+![Smart Invoice Pro Login](docs/screenshots/login.png)
+
+### Dashboard
+
+![Smart Invoice Pro Dashboard](docs/screenshots/dashboard.png)
+
+
 
 ## ✨ Current Features
 
