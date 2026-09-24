@@ -90,18 +90,47 @@ The application is being developed with company-based data relationships to supp
 
 ## 🏗️ Application Architecture
 
-The application follows Laravel's MVC architecture and uses Laravel's database and authentication functionality to manage application data and user access.
+Smart Invoice Pro follows Laravel's MVC architecture and separates application responsibilities across models, views, controllers and supporting application services.
 
-The project is structured around modular business functionality so additional modules can be added as development continues.
-
+### High-Level Structure
+```text
+User
+ │
+ ▼
+Authentication
+ │
+ ▼
+Dashboard
+ │
+ ├── Companies
+ │
+ ├── Clients
+ │
+ └── Invoices
+       │
+       ├── Invoice Items
+       ├── Calculations
+       └── PDF Generation
+```
 ---
+
 
 ## 🗄️ Database
 
-The current development environment uses SQLite.
+## 🗄️ Database
 
-The database contains application entities including users, companies and clients, with additional invoice-related entities planned as development progresses.
+The application currently uses SQLite for development.
 
+The database is managed through Laravel migrations and Eloquent models.
+
+### Current Core Entities
+```text
+Users
+ │
+ └── Companies
+       │
+       └── Clients
+```
 ---
 
 ## 💻 Local Installation
@@ -186,20 +215,69 @@ Developers should create their own `.env` file using:
 
 ---
 
-## 🧪 Development Roadmap
+## ✨ Current Features
 
-Planned functionality includes:
+| Feature | Status | Description |
+|---|---|---|
+| User Authentication | ✅ Complete | User registration, login and protected application access |
+| Dashboard | ✅ Complete | Central dashboard for accessing application functionality |
+| Client Management | ✅ Complete | Create, view, edit and delete client records |
+| Client Details | ✅ Complete | View individual client information |
+| Company Structure | 🚧 In Development | Associates application records with companies |
+| Invoice Management | 🚧 Planned | Create and manage invoices |
+| Invoice Items | 🚧 Planned | Add products/services to invoices |
+| Invoice Calculations | 🚧 Planned | Calculate subtotals, totals and invoice amounts |
+| PDF Generation | 🚧 Planned | Generate downloadable PDF invoices |
+| Invoice History | 🚧 Planned | Track invoices associated with clients |
+| Dashboard Analytics | 🚧 Planned | Display business and invoice statistics |
 
-* Invoice management
-* Invoice items
-* Invoice calculations
-* Invoice status management
-* PDF invoice generation
-* Customer invoice history
-* Dashboard statistics
-* Improved validation
-* Automated testing
-* Production deployment
+
+
+##  Development Roadmap
+
+### Phase 1 — Foundation
+- [x] Laravel application setup
+- [x] Authentication
+- [x] Dashboard
+- [x] Application layout
+- [x] Git/GitHub integration
+
+### Phase 2 — Client Management
+- [x] Client database structure
+- [x] Create clients
+- [x] View clients
+- [x] Edit clients
+- [x] Delete clients
+- [x] Client details
+
+### Phase 3 — Invoice Management
+- [ ] Invoice database structure
+- [ ] Invoice creation
+- [ ] Invoice editing
+- [ ] Invoice deletion
+- [ ] Invoice items
+- [ ] Invoice calculations
+- [ ] Invoice status
+
+### Phase 4 — Document Generation
+- [ ] PDF invoice generation
+- [ ] Invoice download
+- [ ] Printable invoices
+
+### Phase 5 — Dashboard & Reporting
+- [ ] Invoice statistics
+- [ ] Revenue metrics
+- [ ] Client statistics
+- [ ] Recent invoices
+- [ ] Invoice status overview
+
+### Phase 6 — Quality & Production
+- [ ] Form validation
+- [ ] Authorization
+- [ ] Automated testing
+- [ ] Error handling
+- [ ] Production deployment
+- [ ] Production database configuration
 
 ---
 
