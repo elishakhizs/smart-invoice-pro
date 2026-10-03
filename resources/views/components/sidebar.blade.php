@@ -8,30 +8,33 @@
 
     <nav class="flex-1 p-4 space-y-2">
 
-        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+        <a href="/dashboard" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
             Dashboard
         </a>
 
-        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+        <a href="/invoices" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+            Invoices
+        </a>
+        
+        <a href="{{ route('invoices.dashboard') }}"class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+            Invoice Dashboard
+        </a>
+
+        <a href="/clients" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
             Clients
         </a>
 
-        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
-            Invoices
-        </a>
-
-        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+        <a href="/payments" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
             Payments
         </a>
 
-        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
-            Reports
+        <a href="/reports" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+            Reports & Analytics
         </a>
 
-        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+        <a href="{{ route('company.settings') }}" class="block px-4 py-3 rounded-lg hover:bg-gray-800 transition">
             Settings
         </a>
-
     </nav>
 
 </aside>
