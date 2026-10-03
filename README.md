@@ -103,7 +103,7 @@ The core application functionality has been implemented and tested, including:
 
 ### Invoice PDF
 
-![Smart Invoice Pro Invoice PDF](docs/screenshots/invoice-pdf.png)
+![Smart Invoice Pro Invoice PDF](docs/screenshots/pdf.png)
 
 ---
 
